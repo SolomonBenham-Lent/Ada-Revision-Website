@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link id="theme-stylesheet" rel="stylesheet" type="text/css" href="">
+    <link rel="stylesheet" href="../styles/theme_changer.css">
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <title>Generic Revision Site Name</title>
+
+
+<body>
+    <div class="home-background">
+        <div class="background-image background-1"></div>
+    </div>
+
+    <header>
+        <nav class="navbar">
+        <div class="navbar-left">
+            <img src="../Assets/E-learning-logo.png" alt="E-learning Logo" class="navbar-logo" />
+            <button class="navbar-btn home-btn">Home</button>
+            <button class="navbar-btn papers-btn">Core Papers</button>
+            <button class="navbar-btn esp-btn">ESP</button>
+            <button class="navbar-btn active zigzag-btn">Zig-Zag Notes</button>
+        </div>
+        <div class="navbar-right">
+            <button class="navbar-btn settings-btn">Settings</button>
+          <span id="g_id_onload"
+              data-client_id="805206297313-pk485lau3ldgemv2tspqtpful0u272al.apps.googleusercontent.com"
+              data-callback="handleCredentialResponse"
+              data-auto_prompt="false">
+          </span>
+          <span class="g_id_signin"
+              data-type="standard"
+              data-size="medium"
+              data-theme="outline"
+              data-text="sign_in_with"
+              data-shape="pill"
+              data-logo_alignment="left">
+          </span>
+        </div>
+    </nav>
+    </header>
+
+    <main>
+        <div class="content-container">
+            <div class="search-bar-placement">
+                <div class="search-bar-section">
+                    <input class="search-bar" type="text" id="search" placeholder="Search content area...."/>
+                </div>
+            </div>
+
+            <div id="content-sections">
+            </div>
+
+            <table id="task-table" class="hidden">
+                <thead>
+
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </main>
+
+    <footer>
+        <h6>remember to like and subscribe</h6>
+    </footer>
+
+<script src="../scripts/nav_buttons.js"></script>
+
+<script src="../scripts/site_config.js"></script>
+
+<script src="../scripts/ca_notes_backend.js"></script>
+
+<script src="../scripts/sign_in.js"></script>
+
+</body>
+</html>

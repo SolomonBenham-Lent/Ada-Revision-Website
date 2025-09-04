@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Settings</title>
+    <link rel="stylesheet" href="styles/filler.css">
+    <link rel="stylesheet" href="../styles/theme_changer.css">
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+</head>
+<body>
+
+    <div class="background"></div>
+
+    <nav class="navbar">
+        <div class="navbar-left">
+            <img src="../Assets/E-learning-logo.png" alt="E-learning Logo" class="navbar-logo" />
+            <button class="navbar-btn home-btn">Home</button>
+            <button class="navbar-btn papers-btn">Core Papers</button>
+            <button class="navbar-btn esp-btn">ESP</button>
+            <button class="navbar-btn zigzag-btn">Zig-Zag Notes</button>
+        </div>
+        <div class="navbar-right">
+            <button class="navbar-btn active settings-btn">Settings</button>
+          <span id="g_id_onload"
+              data-client_id="805206297313-pk485lau3ldgemv2tspqtpful0u272al.apps.googleusercontent.com"
+              data-callback="handleCredentialResponse"
+              data-auto_prompt="false">
+          </span>
+          <span class="g_id_signin"
+              data-type="standard"
+              data-size="`"
+              data-theme="outline"
+              data-text="sign_in_with"
+              data-shape="pill"
+              data-logo_alignment="left">
+          </span>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="card">
+            <h1 class="title">Settings</h1>
+            <p class="subtitle">Customise your learning experience</p>
+
+            <div class="group">
+                <div class="label">Theme</div>
+                <p class="description">Choose your preferred colour scheme</p>
+                <div class="theme-options">
+                    <label class="theme-option light">
+                        <input type="radio" name="theme" value="light">
+                        <div class="theme-preview"></div>
+                        <span>Light</span>
+                    </label>
+                    <label class="theme-option dark">
+                        <input type="radio" name="theme" value="dark">
+                        <div class="theme-preview"></div>
+                        <span>Dark</span>
+                    </label>
+                    <label class="theme-option auto">
+                        <input type="radio" name="theme" value="auto">
+                        <div class="theme-preview"></div>
+                        <span>Auto</span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="group">
+                <div class="label">Study Preferences</div>
+                <p class="description">Customise how you learn</p>
+                <div class="checkbox-row">
+                    <input type="checkbox" id="progress" checked>
+                    <label for="progress">Show progress indicators</label>
+                </div>
+                <div class="checkbox-row">
+                    <input type="checkbox" id="autosave" checked>
+                    <label for="autosave">Auto-save notes and progress</label>
+                </div>
+                <div class="checkbox-row">
+                    <input type="checkbox" id="reminders">
+                    <label for="reminders">Enable study reminders</label>
+                </div>
+            </div>
+
+            <div class="group">
+                <div class="label">Font Size</div>
+                <p class="description">Adjust text size for better readability</p>
+                <select class="input">
+                    <option value="small">Small</option>
+                    <option value="medium" selected>Medium</option>
+                    <option value="large">Large</option>
+                    <option value="extra-large">Extra Large</option>
+                </select>
+            </div>
+
+            <div class="group">
+                <div class="label">Notifications</div>
+                <p class="description">Manage your notification preferences</p>
+                <div class="checkbox-row">
+                    <input type="checkbox" id="browser-notif">
+                    <label for="browser-notif">Browser notifications</label>
+                </div>
+                <div class="checkbox-row">
+                    <input type="checkbox" id="email-updates">
+                    <label for="email-updates">Email updates</label>
+                </div>
+            </div>
+
+            <div class="group">
+                <div class="label">Performance</div>
+                <p class="description">Optimise site performance</p>
+                <div class="checkbox-row">
+                    <input type="checkbox" id="reduce-anim">
+                    <label for="reduce-anim">Reduce animations</label>
+                </div>
+                <div class="checkbox-row">
+                    <input type="checkbox" id="low-data">
+                    <label for="low-data">Low data mode</label>
+                </div>
+            </div>
+
+            <div class="group">
+                <div class="label">Daily Study Goal (minutes)</div>
+                <p class="description">Set your daily study target</p>
+                <input type="number" class="input" placeholder="60" min="15" max="480">
+            </div>
+
+            
+
+            <button class="save-btn" onclick="saveSettings()">Save Settings</button>
+        </div>
+    </div>
+
+    <script src="../scripts/nav_buttons.js"></script>
+    <script src="../scripts/theme_changer_setting.js"></script>
+    <script src="../scripts/sign_in.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Generic Revision Site Name</title>
+  <link rel="stylesheet" href="styles/filler.css">
+  <link rel="stylesheet" href="styles/theme_changer.css">
+  <script src="https://accounts.google.com/gsi/client" async defer></script>
+</head>
+<body>
+
+  <div class="home-background">
+    <div class ="background-image background-1"></div>
+    <div class ="background-image background-2"></div>
+    <div class ="background-image background-3"></div>
+  </div>
+
+
+ 
+    <nav class="navbar">
+        <div class="navbar-left">
+            <img src="Assets/E-learning-logo.png" alt="E-learning Logo" class="navbar-logo" />
+            <button class="navbar-btn active home-btn">Home</button>
+            <button class="navbar-btn papers-btn">Core Papers</button>
+            <button class="navbar-btn esp-btn">ESP</button>
+            <button class="navbar-btn zigzag-btn">Zig-Zag Notes</button>
+        </div>
+        <div class="navbar-right">
+            <button class="navbar-btn settings-btn">Settings</button>
+          <span id="g_id_onload"
+              data-client_id="805206297313-pk485lau3ldgemv2tspqtpful0u272al.apps.googleusercontent.com"
+              data-callback="handleCredentialResponse"
+              data-auto_prompt="false">
+          </span>
+          <span class="g_id_signin"
+              data-type="standard"
+              data-size="medium"
+              data-theme="outline"
+              data-text="sign_in_with"
+              data-shape="pill"
+              data-logo_alignment="left">
+          </span>
+        </div>
+    </nav>
+
+
+
+
+  <main>
+    <div class="title-main">
+        <div class="title-column">
+            <h1 class="Main-home-title">Your T-Level</h1>
+            <h2 class="secondary-home-title">Learning Space</h2>
+        </div>
+    </div>
+
+
+    <div class="center-rectangle">
+        <div class="rectangle-content">
+            <h2 class="Countdown-text">Countdown until the first T-Level Exam</h2>
+            <br></br>
+            <p id ="countdown" class ="countdown">Loading...</p>
+        </div>
+    </div>
+
+    <div class="box-set-1">
+      <div class="box-image-1">
+        <a href="pages/core_papers.html">
+          <img src='backgrounds/Written-paper-image.jpg'>
+        </a>
+      </div>
+      <div class="box-text-1">
+        <div class="box-column-1">
+          <h1 class="written-paper-title">Written Paper</h1>
+          <h2 class="written-paper-description">The DPDD written papers test your knowledge of digital principles, tools, and business environments through a mix of question types.</h2>
+        </div>
+      </div>
+    </div>
+
+    <div class="box-set-2">
+      <div class="box-text-2">
+        <div class="box-column-2">
+          <h1 class="ESP-title">ESP</h1>
+          <h2 class="ESP-description">The ESP is a practical project where you plan, develop, and review a solution based on a real-world scenario.</h2>
+        </div>
+      </div>
+      <div class="box-image-2">
+        <a href="pages/employer_set_project.html">
+          <img src="backgrounds/ESP-image.jpg">
+        </a>
+      </div>
+    </div>
+
+    <div class="top-divider-placement">
+      <div class="top-divider"></div>
+    </div>
+    <div class="data-placement">
+      <div class="number-students">
+        <h1 class="number-student-data">2K+</h1>
+        <h2 class="number-student-info">T-Level DPDD Students</h2>
+      </div>
+      <div class="work-placements">
+        <h1 class="work-placement-data">47</h1>
+        <h2 class="work-placement-info">Official Work Placement Providers</h2>
+      </div>
+      <div class="work-hours">
+        <h1 class="work-hours-data">300+</h1>
+        <h2 class="work-hours-info">Hours of work in the industry</h2>
+      </div>
+    </div>
+    <div class="bottom-divider-placement">
+      <div class="bottom-divider"></div>
+    </div>
+
+    <div class="story-title-placement">
+      <div class="our-stories">Our Stories</div>
+    </div>
+      
+
+    <div class="stories-placement">
+      <div class="student-story"></div>
+      <div class="ex-student-story"></div>
+      <div class="teacher-story"></div>
+    </div>
+
+  </main>
+
+
+<script src="scripts/countdown.js"></script>
+
+<script src="scripts/nav_buttons.js"></script>
+
+<script src="scripts/theme_changer.js"></script>
+
+<script src="scripts/sign_in.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,301 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #f5f5f5;
+    padding: 0.5rem 1.5rem;
+    border-bottom: 1px solid #ddd;
+    position: sticky;
+    top: 10px;
+    margin: 0 10px;
+    z-index: 100;
+    border-radius: 20px;
+    color: #000;
+}
+
+.navbar-left, .navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.navbar-logo {
+    height: 40px;
+    width: 40px;
+    object-fit: contain;
+}
+
+.navbar-btn {
+    background: none;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    color: #000;
+}
+
+.navbar-btn.active {
+    font-weight: bold;
+    text-decoration: underline;
+    color: #000;
+}
+
+.navbar-btn:hover {
+    color: purple;
+}
+
+.home-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+}
+
+.background-image {
+    height: 100vh; 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.background-1 {
+    background-image: url('../backgrounds/1.png');
+}
+
+.content-container {
+    margin: 20px;
+    background: rgba(30, 30, 30, 0.95);
+    border-radius: 12px;
+    padding: 20px;
+    backdrop-filter: blur(10px);
+}
+
+.search-bar-placement {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto 20px auto;
+}
+
+.search-bar-section {
+    width: 80%;
+    height: 80px;
+    background-color: #4c2c93;
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.search-bar {
+    width: 100%;
+    max-width: 500px;
+    height: 40px;
+    padding: 0.8rem 3rem 0.8rem 1.5rem;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 20px;
+    font-size: 1rem;
+    color: #fff;
+    transition: all 0.3s ease;
+    outline: none;
+    font-family: inherit;
+    text-align: center;
+    box-sizing: border-box;
+    background-image: url('../Assets/search_icon.png');
+    background-repeat: no-repeat;
+    background-position: right 1.5rem center;
+    background-size: 1.2rem;
+}
+
+.search-bar:focus {
+    border-color: rgba(255, 255, 255, 0.6);
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+.search-bar::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.guide-buttons {
+    display: flex; /* Makes the container a flexbox */
+    justify-content: center; /* Centers items horizontally */
+    gap: 15px; /* Adds a gap between the buttons */
+    /* Add any other container styles here, like padding or background */
+}
+
+.guide-buttons button {
+    /* Basic button styling */
+    background: #4a4a4a;
+    color: white;
+    border: 1px solid #ffffff;
+    
+    /* Shape and size */
+    width: 150px; /* Adjust as needed for a square-like shape */
+    height: 60px;
+    border-radius: 15px; /* Rounded corners */
+    
+    /* Other properties */
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 1rem;
+    line-height: 1.2;
+}
+
+/* Optional: Add hover/active states for better user experience */
+.guide-buttons button:hover {
+    background: #5a5a5a;
+    transform: scale(1.05); /* Slight enlargement on hover */
+    transition: all 0.2s ease-in-out;
+}
+
+.guide-buttons button:active {
+    background: #3a3a3a;
+}
+
+.content-section {
+    margin-bottom: 20px;
+    border: 1px solid #3a3a3a;
+    border-radius: 8px;
+    background: #2a2a2a;
+    overflow: hidden;
+}
+
+.section-header {
+    background: linear-gradient(135deg, #4a4a4a, #3a3a3a);
+    padding: 15px 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s ease;
+    border-bottom: 1px solid #3a3a3a;
+}
+
+.section-header:hover {
+    background: linear-gradient(135deg, #5a5a5a, #4a4a4a);
+}
+
+.section-title {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #e0e0e0;
+    margin: 0;
+}
+
+.dropdown-arrow {
+    font-size: 1.2rem;
+    color: #a0a0ff;
+    transition: transform 0.3s ease;
+    display: none;
+}
+
+.section-header.expanded .dropdown-arrow {
+    transform: rotate(180deg);
+}
+
+.section-content {
+    display: none;
+    background: #2a2a2a;
+}
+
+.section-content.expanded {
+    display: block;
+}
+
+.subsection-item {
+    padding: 12px 20px;
+    border-bottom: 1px solid #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.2s ease;
+}
+
+.subsection-item:last-child {
+    border-bottom: none;
+}
+
+.subsection-item:hover {
+    background-color: #3a3a3a;
+}
+
+.subsection-name {
+    color: #d0d0d0;
+    font-size: 0.95rem;
+}
+
+.subsection-links {
+    display: flex;
+    gap: 15px;
+}
+
+.subsection-link {
+    color: #a0a0ff;
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+}
+
+.subsection-link:hover {
+    background-color: rgba(160, 160, 255, 0.2);
+    color: #c0c0ff;
+}
+
+.subsection-link:empty {
+    display: none;
+}
+
+#task-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: #2a2a2a;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+#task-table th {
+    background: #333;
+    color: #f5f5f5;
+    padding: 12px;
+    text-align: left;
+}
+
+#task-table td {
+    padding: 12px;
+    border-bottom: 1px solid #3a3a3a;
+    color: #d0d0d0;
+}
+
+#task-table tr:hover {
+    background-color: #3a3a3a;
+}
+
+#task-table a {
+    color: #a0a0ff;
+    text-decoration: none;
+}
+
+#task-table a:hover {
+    color: #c0c0ff;
+}
+
+.hidden {
+    display: none;
+}
+    
