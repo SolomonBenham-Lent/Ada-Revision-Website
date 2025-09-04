@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <!-- External Stylesheets -->
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <link rel="stylesheet" href="styles/filler.css">
+    <link rel="stylesheet" href="../styles/theme_changer.css">
+    <link rel="stylesheet" href="../styles/quizz.css">
+
+</head>
+
+<body>
+    <!-- Background Element -->
+    <div class="background"></div>
+
+    <!-- Navigation Bar -->
+   <nav class="navbar">
+        <div class="navbar-left">
+            <img src="../Assets/E-learning-logo.png" alt="E-learning Logo" class="navbar-logo" />
+            <button class="navbar-btn home-btn">Home</button>
+            <button class="navbar-btn papers-btn">Core Papers</button>
+            <button class="navbar-btn esp-btn">ESP</button>
+            <button class="navbar-btn zigzag-btn">Zig-Zag Notes</button>
+            <button class="navbar-btn active quiz-btn">Quizz</button>
+        </div>
+        <div class="navbar-right">
+            <button class="navbar-btn settings-btn">Settings</button>
+          <span id="g_id_onload"
+              data-client_id="805206297313-pk485lau3ldgemv2tspqtpful0u272al.apps.googleusercontent.com"
+              data-callback="handleCredentialResponse"
+              data-auto_prompt="false">
+          </span>
+          <span class="g_id_signin"
+              data-type="standard"
+              data-size="medium"
+              data-theme="outline"
+              data-text="sign_in_with"
+              data-shape="pill"
+              data-logo_alignment="left">
+          </span>
+        </div>
+    </nav>
+
+    <!-- Main Quiz Container -->
+    <div class="quiz-container">
+        <!-- Quiz Header -->
+        <div class="quiz-header">
+            <h1>Multi-Category Quiz</h1>
+            <p class="quiz-subtitle" id="quizSubtitle">Choose a category to begin</p>
+            <div class="quiz-progress">
+                <div class="progress-bar" id="progressBar"></div>
+            </div>
+        </div>
+
+        <!-- Category Selection Screen -->
+        <div class="category-selector" id="categorySelector">
+            <h2>Choose Your Content Area</h2>
+            <div class="categories" id="categoriesContainer"></div>
+            <button class="btn start-btn" id="startQuizBtn" onclick="startSelectedQuiz()" disabled>Start Quiz</button>
+        </div>
+
+        <!-- Quiz Body -->
+        <div class="quiz-body" id="quizBody">
+            <!-- Questions will be dynamically inserted here -->
+            <div id="questionsContainer"></div>
+
+            <!-- Quiz Navigation Controls -->
+            <div class="quiz-controls">
+                <button class="btn" id="prevBtn" onclick="previousQuestion()" disabled>Previous</button>
+                <span id="questionCounter">Question 1</span>
+                <button class="btn" id="nextBtn" onclick="nextQuestion()" disabled>Next</button>
+            </div>
+
+            <!-- Quiz Results Screen -->
+            <div class="quiz-results" id="results">
+                <h2>Quiz Complete!</h2>
+                <div class="score" id="finalScore">0/0</div>
+                <div class="results-message" id="resultsMessage"></div>
+                <button class="btn restart-btn" onclick="restartQuiz()">Retake Quiz</button>
+                <button class="btn change-category-btn" onclick="changeCategory()">Choose New Category</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- External JavaScript Files -->
+
+    <script src="../scripts/quizz-questions.js"></script>
+    <script src="../scripts/nav_buttons.js"></script>
