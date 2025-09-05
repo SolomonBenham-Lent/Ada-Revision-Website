@@ -19,7 +19,7 @@ function parseAndFormatData(text) {
 }
 
 // Fetch the file and pass the parsed data to the main application.
-const filePath = '../backend/CA1_flaschcards.txt'; 
+const filePath = '/Ada-Revision-Website/backend/CA1_flashcards.txt'; 
 
 fetch(filePath)
     .then(response => {
@@ -40,4 +40,5 @@ fetch(filePath)
     })
     .catch(error => {
         console.error('Error fetching the file:', error);
+
     }); 
