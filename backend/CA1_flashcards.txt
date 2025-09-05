@@ -4,5 +4,5 @@
 Define: top-down approach	Technique used to solve problems where the problem is broken down into smaller and smaller problems until an easily solved problem is defined	
 Fill The Blank: The ...... ......... approach divides a problem into multiple smaller problems which can be used to individually code each module	Top Down	
 Fill The Blank: When using the top down approach, the problem is ........... until it cannot be done so any further	Decomposed	
-Fill The Blank:&nbsp;Each level in the top down approach shows a different level of ....... due to ................	Detail, Abstraction	
+Fill The Blank: Each level in the top down approach shows a different level of ....... due to ................	Detail, Abstraction	
 Define: Computational Thinking	Representing a problem in a logical and structure manner so that solving becomes much easier	
