@@ -10,62 +10,38 @@ document.addEventListener('DOMContentLoaded', () => {
     const espBtn = document.querySelector('.esp-btn');
     const zigzagBtn = document.querySelector('.zigzag-btn');
     const quizBtn = document.querySelector('.quiz-btn');
+    const flashcardBtn = document.querySelector('.flashcard-btn');
     const accountBtn = document.querySelector('.account-btn');
     const settingsBtn = document.querySelector('.settings-btn');
-    
-    // Debug logging
-    console.log('Navigation elements found:', {
-        homeBtn: !!homeBtn,
-        papersBtn: !!papersBtn,
-        espBtn: !!espBtn,
-        zigzagBtn: !!zigzagBtn,
-        quizBtn: !!quizBtn,
-        accountBtn: !!accountBtn,
-        settingsBtn: !!settingsBtn
-    });
 
     // Add event listeners to handle navigation with dynamic paths
-    if (homeBtn) {
-        homeBtn.addEventListener('click', () => {
-            window.location.href = basePath + 'index.html';
-        });
-    }
+    homeBtn.addEventListener('click', () => {
+        window.location.href = basePath + 'index.html';
+    });
 
-    if (papersBtn) {
-        papersBtn.addEventListener('click', () => {
-            window.location.href = basePath + 'pages/core_papers.html';
-        });
-    }
+    papersBtn.addEventListener('click', () => {
+        window.location.href = basePath + 'pages/core_papers.html';
+    });
 
-    if (espBtn) {
-        espBtn.addEventListener('click', () => {
-            window.location.href = basePath + 'pages/employer_set_project.html';
-        });
-    }
+    espBtn.addEventListener('click', () => {
+        window.location.href = basePath + 'pages/employer_set_project.html';
+    });
 
-    if (zigzagBtn) {
-        zigzagBtn.addEventListener('click', () => {
-            window.location.href = basePath + 'pages/core_zigzag.html';
-        });
-    }
+    zigzagBtn.addEventListener('click', () => {
+        window.location.href = basePath + 'pages/core_zigzag.html';
+    });
 
-    if (quizBtn) {
-        quizBtn.addEventListener('click', () => {
-            window.location.href = basePath + 'pages/quiz.html';
-        });
-    }
+    quizBtn.addEventListener('click', () => {
+        window.location.href = basePath + 'pages/quiz.html';
+    });
 
-    if (accountBtn) {
-        accountBtn.addEventListener('click', () => {
-            window.location.href = basePath + 'pages/sign_in_google.html';
-        });
-    }
+    flashcardBtn.addEventListener('click', () => {
+        window.location.href = basePath + 'pages/flashcards.html';
+    });
 
-    if (settingsBtn) {
-        settingsBtn.addEventListener('click', () => {
-            window.location.href = basePath + 'pages/settings.html';
-        });
-    }
+    settingsBtn.addEventListener('click', () => {
+        window.location.href = basePath + 'pages/settings.html';
+    });
 
     const allButtons = document.querySelectorAll('.navbar-btn');
     allButtons.forEach(button => {
@@ -82,6 +58,8 @@ document.addEventListener('DOMContentLoaded', () => {
         } else if (button.classList.contains('zigzag-btn') && currentPageFilename === 'core_zigzag.html') {
             button.classList.add('active');
         } else if (button.classList.contains('quiz-btn') && currentPageFilename === 'quiz.html') {
+            button.classList.add('active');
+        } else if (button.classList.contains('flashcard-btn') && currentPageFilename === 'flashcards.html') {
             button.classList.add('active');
         } else if (button.classList.contains('account-btn') && currentPageFilename === 'sign_in_google.html') {
             button.classList.add('active');

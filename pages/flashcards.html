@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link id="theme-stylesheet" rel="stylesheet" type="text/css" href="">
+    <link rel="stylesheet" href="../styles/theme_changer.css">
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <title>Generic Revision Site Name</title>
+
+</head>
+
+<body>
+    <div class="home-background">
+        <div class="background-image background-1"></div>
+    </div>
+
+    <header>
+        <nav class="navbar">
+        <div class="navbar-left">
+            <img src="../Assets/E-learning-logo.png" alt="E-learning Logo" class="navbar-logo" />
+            <button class="navbar-btn home-btn">Home</button>
+            <button class="navbar-btn papers-btn">Core Papers</button>
+            <button class="navbar-btn esp-btn">ESP</button>
+            <button class="navbar-btn zigzag-btn">Zig-Zag Notes</button>
+            <button class="navbar-btn quiz-btn">Quiz</button>
+            <button class="navbar-btn active flashcard-btn">Flashcards</button>
+        </div>
+        <div class="navbar-right">
+            <button class="navbar-btn settings-btn">Settings</button>
+          <span id="g_id_onload"
+              data-client_id="805206297313-pk485lau3ldgemv2tspqtpful0u272al.apps.googleusercontent.com"
+              data-callback="handleCredentialResponse"
+              data-auto_prompt="false">
+          </span>
+          <span class="g_id_signin"
+              data-type="standard"
+              data-size="medium"
+              data-theme="outline"
+              data-text="sign_in_with"
+              data-shape="pill"
+              data-logo_alignment="left">
+          </span>
+        </div>
+    </nav>
+    </header>
+
+    <main class="main-but-class">
+    <div class="main-container">
+        <div class="flashcard-container">
+            <div class="flashcard" id="flashcard">
+                <div class="flashcard-face flashcard-front" id="front-text"></div>
+                <div class="flashcard-face flashcard-back" id="back-text"></div>
+            </div>
+        </div>
+        <div class="controls">
+            <button id="prevBtn">Previous</button>
+            <button id="nextBtn">Next</button>
+        </div>
+    </div>
+
+<script>
+    function initializeFlashcards(data) {
+        // Now 'data' holds the flashcard content from the file.
+        const flashcardData = data;
+        const keys = Object.keys(flashcardData);
+        let currentIndex = 0;
+
+        // Get your elements
+        const flashcard = document.getElementById('flashcard');
+        const frontText = document.getElementById('front-text');
+        const backText = document.getElementById('back-text');
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+        
+        // This is a crucial line to ensure the page has loaded before attempting to find the elements
+        if (!flashcard || !frontText || !backText) {
+            console.error('Error: Flashcard elements not found in the DOM.');
+            return;
+        }
+
+        // Function to update the flashcard content
+        function updateCard() {
+            const currentKey = keys[currentIndex];
+            frontText.textContent = currentKey;
+            backText.textContent = flashcardData[currentKey];
+            flashcard.classList.remove('is-flipped'); // Ensure it starts on the front side
+        }
+
+        // Initial load
+        updateCard();
+
+        // Event listener for flipping the card
+        flashcard.addEventListener('click', () => {
+            flashcard.classList.toggle('is-flipped');
+        });
+
+        // Event listener for the "Next" button
+        nextBtn.addEventListener('click', () => {
+            currentIndex = (currentIndex + 1) % keys.length;
+            updateCard();
+        });
+
+        // Event listener for the "Previous" button
+        prevBtn.addEventListener('click', () => {
+            currentIndex = (currentIndex - 1 + keys.length) % keys.length;
+            updateCard();
+        });
+    }
+</script>
+    </main>
+
+    <footer>
+        <h6>remember to like and subscribe</h6>
+    </footer>
+
+<script src="../scripts/nav_buttons.js"></script>
+
+<script src="../scripts/site_config.js"></script>
+
+<script src="../scripts/theme_changer.js"></script>
+
+<script src="../scripts/ca_question_backend.js"></script>
+
+<script src="../scripts/sign_in.js"></script>
+
+<script src="../scripts/flashcard_backend.js"></script>
+
+</body>
+</html>
