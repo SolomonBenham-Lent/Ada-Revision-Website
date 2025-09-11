@@ -1,12 +1,35 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
+    <link id="theme-stylesheet" rel="stylesheet" type="text/css" href="">
+    <link rel="stylesheet" href="../styles/theme_changer.css">
     <title>User Profile</title>
 </head>
 <body>
+    <header>
+        <nav class="navbar">
+        <div class="navbar-left">
+            <img src="../Assets/E-learning-logo.png" alt="E-learning Logo" class="navbar-logo" />
+            <button class="navbar-btn home-btn">Home</button>
+            <button class="navbar-btn papers-btn">Core Papers</button>
+            <button class="navbar-btn esp-btn">ESP</button>
+            <button class="navbar-btn zigzag-btn">Zig-Zag Notes</button>
+            <button class="navbar-btn quiz-btn">Quiz</button>
+            <button class="navbar-btn flashcard-btn">Flashcards</button>
+        </div>
+        <div class="navbar-right">
+            <button class="navbar-btn settings-btn">Settings</button>
+        </div>
+    </nav>
+    </header>
+
+
     <h1>User Profile</h1>
     <p>Name: <span id="userName"></span></p>
     <p>Email: <span id="userEmail"></span></p>
+
+    <script src="../scripts/nav_buttons.js"></script>
 
     <script src="../scripts/profile.js"></script>
 </body>

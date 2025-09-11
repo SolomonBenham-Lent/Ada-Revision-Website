@@ -1,6 +1,6 @@
 function displayUserData() {
     // This line retrieves the user data string that was saved by sign_in.js
-    const userDataString = localStorage.getItem('userData'); 
+    const userDataString = sessionStorage.getItem('userData'); 
     
     if (userDataString) {
         // Parse the JSON string back into a JavaScript object

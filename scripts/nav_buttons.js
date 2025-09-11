@@ -11,9 +11,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const zigzagBtn = document.querySelector('.zigzag-btn');
     const quizBtn = document.querySelector('.quiz-btn');
     const flashcardBtn = document.querySelector('.flashcard-btn');
-    const AIBtn = document.querySelector('.AI-btn');
     const accountBtn = document.querySelector('.account-btn');
     const settingsBtn = document.querySelector('.settings-btn');
+    const profileBtn = document.querySelector('.profile-btn');
 
     // Add event listeners to handle navigation with dynamic paths
     homeBtn.addEventListener('click', () => {
@@ -40,14 +40,12 @@ document.addEventListener('DOMContentLoaded', () => {
         window.location.href = basePath + 'pages/flashcards.html';
     });
 
-
-    AIBtn.addEventListener('click', () => {
-        window.location.href = basePath + 'pages/AI.html';
-    });
-
-
     settingsBtn.addEventListener('click', () => {
         window.location.href = basePath + 'pages/settings.html';
+    });
+
+    profileBtn.addEventListener('click', () => {
+        window.location.href = basePath + 'pages/profile.html';
     });
 
     const allButtons = document.querySelectorAll('.navbar-btn');
@@ -68,11 +66,11 @@ document.addEventListener('DOMContentLoaded', () => {
             button.classList.add('active');
         } else if (button.classList.contains('flashcard-btn') && currentPageFilename === 'flashcards.html') {
             button.classList.add('active');
-        } else if (button.classList.contains('AI-btn') && currentPageFilename === 'AI.html') {
-            button.classList.add('active');
         } else if (button.classList.contains('account-btn') && currentPageFilename === 'sign_in_google.html') {
             button.classList.add('active');
         } else if (button.classList.contains('settings-btn') && currentPageFilename === 'settings.html') {
+            button.classList.add('active');
+        } else if (button.classList.contains('profile-btn') && currentPageFilename === 'profile.html') {
             button.classList.add('active');
         }
     });

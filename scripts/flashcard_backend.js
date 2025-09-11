@@ -1,3 +1,4 @@
+// Function to parse the tab-separated file and format the data
 function parseAndFormatData(text) {
     const flashcardData = {};
     const lines = text.trim().split('\n');
