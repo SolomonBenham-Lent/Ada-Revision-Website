@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const zigzagBtn = document.querySelector('.zigzag-btn');
     const quizBtn = document.querySelector('.quiz-btn');
     const flashcardBtn = document.querySelector('.flashcard-btn');
+    const AIBtn = document.querySelector('.AI-btn');
     const accountBtn = document.querySelector('.account-btn');
     const settingsBtn = document.querySelector('.settings-btn');
 
@@ -39,6 +40,12 @@ document.addEventListener('DOMContentLoaded', () => {
         window.location.href = basePath + 'pages/flashcards.html';
     });
 
+
+    AIBtn.addEventListener('click', () => {
+        window.location.href = basePath + 'pages/AI.html';
+    });
+
+
     settingsBtn.addEventListener('click', () => {
         window.location.href = basePath + 'pages/settings.html';
     });
@@ -60,6 +67,8 @@ document.addEventListener('DOMContentLoaded', () => {
         } else if (button.classList.contains('quiz-btn') && currentPageFilename === 'quiz.html') {
             button.classList.add('active');
         } else if (button.classList.contains('flashcard-btn') && currentPageFilename === 'flashcards.html') {
+            button.classList.add('active');
+        } else if (button.classList.contains('AI-btn') && currentPageFilename === 'AI.html') {
             button.classList.add('active');
         } else if (button.classList.contains('account-btn') && currentPageFilename === 'sign_in_google.html') {
             button.classList.add('active');

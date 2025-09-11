@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <link id="theme-stylesheet" rel="stylesheet" type="text/css" href="">
     <link rel="stylesheet" href="../styles/theme_changer.css">
+    <link rel="stylesheet" href="../styles/flashcards.css">
     <script src="https://accounts.google.com/gsi/client" async defer></script>
     <title>Generic Revision Site Name</title>
-
 </head>
 
 <body>
@@ -16,114 +16,117 @@
 
     <header>
         <nav class="navbar">
-        <div class="navbar-left">
-            <img src="../Assets/E-learning-logo.png" alt="E-learning Logo" class="navbar-logo" />
-            <button class="navbar-btn home-btn">Home</button>
-            <button class="navbar-btn papers-btn">Core Papers</button>
-            <button class="navbar-btn esp-btn">ESP</button>
-            <button class="navbar-btn zigzag-btn">Zig-Zag Notes</button>
-            <button class="navbar-btn quiz-btn">Quiz</button>
-            <button class="navbar-btn active flashcard-btn">Flashcards</button>
-        </div>
-        <div class="navbar-right">
-            <button class="navbar-btn settings-btn">Settings</button>
-          <span id="g_id_onload"
-              data-client_id="805206297313-pk485lau3ldgemv2tspqtpful0u272al.apps.googleusercontent.com"
-              data-callback="handleCredentialResponse"
-              data-auto_prompt="false">
-          </span>
-          <span class="g_id_signin"
-              data-type="standard"
-              data-size="medium"
-              data-theme="outline"
-              data-text="sign_in_with"
-              data-shape="pill"
-              data-logo_alignment="left">
-          </span>
-        </div>
-    </nav>
+            <div class="navbar-left">
+                <img src="../Assets/E-learning-logo.png" alt="E-learning Logo" class="navbar-logo" />
+                <button class="navbar-btn home-btn">Home</button>
+                <button class="navbar-btn papers-btn">Core Papers</button>
+                <button class="navbar-btn esp-btn">ESP</button>
+                <button class="navbar-btn zigzag-btn">Zig-Zag Notes</button>
+                <button class="navbar-btn quiz-btn">Quiz</button>
+                <button class="navbar-btn active flashcard-btn">Flashcards</button>
+                <button class="navbar-btn  AI-btn">AI</button>
+            </div>
+            <div class="navbar-right">
+                <button class="navbar-btn settings-btn">Settings</button>
+                <span id="g_id_onload"
+                    data-client_id="805206297313-pk485lau3ldgemv2tspqtpful0u272al.apps.googleusercontent.com"
+                    data-callback="handleCredentialResponse"
+                    data-auto_prompt="false">
+                </span>
+                <span class="g_id_signin"
+                    data-type="standard"
+                    data-size="medium"
+                    data-theme="outline"
+                    data-text="sign_in_with"
+                    data-shape="pill"
+                    data-logo_alignment="left">
+                </span>
+            </div>
+        </nav>
     </header>
 
-    <main class="main-but-class">
-    <div class="main-container">
-        <div class="flashcard-container">
-            <div class="flashcard" id="flashcard">
-                <div class="flashcard-face flashcard-front" id="front-text"></div>
-                <div class="flashcard-face flashcard-back" id="back-text"></div>
+    <main>
+        <div class="flashcard-container-main">
+            <div class="flashcard-header">
+                <h1>T-level flashcards</h1>
+                <p class="flashcard-subtitle" id="flashcardSubtitle">Choose a category to begin</p>
+                <div class="flashcard-progress">
+                    <div class="progress-bar" id="flashcardProgressBar"></div>
+                </div>
+            </div>
+
+            <div class="category-selector" id="categorySelector">
+                <h2>Choose Your Content Area</h2>
+                <div class="categories" id="categoriesContainer">
+                    <div class="category-card" data-category="CA1">
+                        <div class="category-title">CA1</div>
+                        <div class="category-description">Content Area 1 Flashcards</div>
+                    </div>
+                    <div class="category-card" data-category="CA2">
+                        <div class="category-title">CA2</div>
+                        <div class="category-description">Content Area 2 Flashcards</div>
+                    </div>
+                    <div class="category-card" data-category="CA3">
+                        <div class="category-title">CA3</div>
+                        <div class="category-description">Content Area 3 Flashcards</div>
+                    </div>
+                    <div class="category-card" data-category="CA4">
+                        <div class="category-title">CA4</div>
+                        <div class="category-description">Content Area 4 Flashcards</div>
+                    </div>
+                    <div class="category-card" data-category="CA5">
+                        <div class="category-title">CA5</div>
+                        <div class="category-description">Content Area 5 Flashcards</div>
+                    </div>
+                    <div class="category-card" data-category="CA6">
+                        <div class="category-title">CA6</div>
+                        <div class="category-description">Content Area 6 Flashcards</div>
+                    </div>
+                    <div class="category-card" data-category="CA7">
+                        <div class="category-title">CA7</div>
+                        <div class="category-description">Content Area 7 Flashcards</div>
+                    </div>
+                    <div class="category-card" data-category="CA8">
+                        <div class="category-title">CA8</div>
+                        <div class="category-description">Content Area 8 Flashcards</div>
+                    </div>
+                </div>
+                <button class="btn start-btn" id="startFlashcardsBtn" disabled>Start Flashcards</button>
+            </div>
+
+            <div class="flashcard-body" id="flashcardBody">
+                <button class="btn back-btn" id="backToCategoriesBtn">← Back to Categories</button>
+                
+                <div class="main-flashcard-container">
+                    <div class="flashcard-display">
+                        <div class="flashcard" id="flashcard">
+                            <div class="flashcard-face flashcard-front" id="front-text">
+                                Click to start studying!
+                            </div>
+                            <div class="flashcard-face flashcard-back" id="back-text">
+                                Select a category first
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="flashcard-controls">
+                        <button class="control-btn" id="prevBtn">Previous</button>
+                        <div class="card-counter" id="cardCounter">Card 1 of 1</div>
+                        <button class="control-btn" id="nextBtn">Next</button>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="controls">
-            <button id="prevBtn">Previous</button>
-            <button id="nextBtn">Next</button>
-        </div>
-    </div>
-
-<script>
-    function initializeFlashcards(data) {
-        // Now 'data' holds the flashcard content from the file.
-        const flashcardData = data;
-        const keys = Object.keys(flashcardData);
-        let currentIndex = 0;
-
-        // Get your elements
-        const flashcard = document.getElementById('flashcard');
-        const frontText = document.getElementById('front-text');
-        const backText = document.getElementById('back-text');
-        const prevBtn = document.getElementById('prevBtn');
-        const nextBtn = document.getElementById('nextBtn');
-        
-        // This is a crucial line to ensure the page has loaded before attempting to find the elements
-        if (!flashcard || !frontText || !backText) {
-            console.error('Error: Flashcard elements not found in the DOM.');
-            return;
-        }
-
-        // Function to update the flashcard content
-        function updateCard() {
-            const currentKey = keys[currentIndex];
-            frontText.textContent = currentKey;
-            backText.textContent = flashcardData[currentKey];
-            flashcard.classList.remove('is-flipped'); // Ensure it starts on the front side
-        }
-
-        // Initial load
-        updateCard();
-
-        // Event listener for flipping the card
-        flashcard.addEventListener('click', () => {
-            flashcard.classList.toggle('is-flipped');
-        });
-
-        // Event listener for the "Next" button
-        nextBtn.addEventListener('click', () => {
-            currentIndex = (currentIndex + 1) % keys.length;
-            updateCard();
-        });
-
-        // Event listener for the "Previous" button
-        prevBtn.addEventListener('click', () => {
-            currentIndex = (currentIndex - 1 + keys.length) % keys.length;
-            updateCard();
-        });
-    }
-</script>
     </main>
 
     <footer>
         <h6>remember to like and subscribe</h6>
     </footer>
 
-<script src="../scripts/nav_buttons.js"></script>
-
-<script src="../scripts/site_config.js"></script>
-
-<script src="../scripts/theme_changer.js"></script>
-
-<script src="../scripts/ca_question_backend.js"></script>
-
-<script src="../scripts/sign_in.js"></script>
-
-<script src="../scripts/flashcard_backend.js"></script>
-
+    <script src="../scripts/nav_buttons.js"></script>
+    <script src="../scripts/site_config.js"></script>
+    <script src="../scripts/theme_changer.js"></script>
+    <script src="../scripts/sign_in.js"></script>
+    <script src="../scripts/flashcard_backend.js"></script>
 </body>
 </html>
