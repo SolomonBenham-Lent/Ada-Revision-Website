@@ -1,3 +1,10 @@
+var one_time_flag = true;
+if (one_time_flag) {
+    document.getElementById('profile_button').style.display = "none";
+    one_time_flag = false;
+}
+
+
 function handleCredentialResponse(response) {
     console.log("Encoded JWT ID token: " + response.credential);
     sendTokenToServer(response.credential);

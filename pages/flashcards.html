@@ -24,21 +24,27 @@
                 <button class="navbar-btn zigzag-btn">Zig-Zag Notes</button>
                 <button class="navbar-btn quiz-btn">Quiz</button>
                 <button class="navbar-btn active flashcard-btn">Flashcards</button>
+                <button class="navbar-btn ai-btn">AI</button>
             </div>
             <div class="navbar-right">
                 <button class="navbar-btn settings-btn">Settings</button>
-                <span id="g_id_onload"
-                    data-client_id="805206297313-pk485lau3ldgemv2tspqtpful0u272al.apps.googleusercontent.com"
-                    data-callback="handleCredentialResponse"
-                    data-auto_prompt="false">
+                <span id="replace_sign_in">
+                    <span id="g_id_onload"
+                        data-client_id="805206297313-pk485lau3ldgemv2tspqtpful0u272al.apps.googleusercontent.com"
+                        data-callback="handleCredentialResponse"
+                        data-auto_prompt="false">
+                    </span>
+                    <span class="g_id_signin"
+                        data-type="standard"
+                        data-size="medium"
+                        data-theme="outline"
+                        data-text="sign_in_with"
+                        data-shape="pill"
+                        data-logo_alignment="left">
+                    </span>
                 </span>
-                <span class="g_id_signin"
-                    data-type="standard"
-                    data-size="medium"
-                    data-theme="outline"
-                    data-text="sign_in_with"
-                    data-shape="pill"
-                    data-logo_alignment="left">
+                <span id="profile_button">
+                    <button class="navbar-btn profile-btn">Profile</button>
                 </span>
             </div>
         </nav>
@@ -127,5 +133,6 @@
     <script src="../scripts/theme_changer.js"></script>
     <script src="../scripts/sign_in.js"></script>
     <script src="../scripts/flashcard_backend.js"></script>
+    <script src="../scripts/sign_in_check.js"></script>
 </body>
 </html>

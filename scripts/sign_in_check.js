@@ -5,9 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (replace_sign_in) {
             replace_sign_in.remove();
 
-            const profile_appear = document.getElementById('profile_button');
-            profile_appear.hide();
-
+            document.getElementById('profile_button').style.display = "inline";
         }
     }
 });
