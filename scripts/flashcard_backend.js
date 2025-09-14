@@ -57,7 +57,7 @@ function backToCategories() {
 }
 
 function loadFlashcards(category) {
-    const filePath = `../backend/${category}_flashcards.txt`;
+    const filePath = `../backend/flashcards/${category}_flashcards.txt`;
     
     fetch(filePath)
         .then(response => {
