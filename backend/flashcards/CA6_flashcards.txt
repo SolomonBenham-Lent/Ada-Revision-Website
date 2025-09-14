@@ -1,0 +1,174 @@
+#separator:tab
+#html:true
+#tags column:3
+Fill The Blank: Data is stored by .........................., organisations, businesses and ................	Governments, People
+Fill The Blank: Data has no ............... and can be ......................... or ...............................	Meaning, Qualititative, Quantitative
+Fill The Blank: Data is ......... facts and ................... before it has been ......................... and data can be made up of letters, .................., symbols, graphics and ..................	Raw, Figures, Processed, Numbers, Sounds
+Define: Data	Raw facts and figures before they have been processed
+Define: Qualitative Data	Non-numerical data
+Define: Quantitative Data	Numerical Data
+Define: Information	data + [structure] + [context] + meaning
+Fill The Blank: Information is created when data is ........................, sometimes it is unneccessary to give data ................. and .................... to become information	Processed, Structure, Context
+Explain: Briefly, structure of data	How it is presented (eg: NN/NN/NNNN)
+Explain: Briefly, context of data	Context of data is the environment that we know and understand to make sense of the data
+Fill The Blank: The ................ of data is that it is in the correct structure and put into context	Meaning
+Fill The Blank: Information is in ................... while data has no ...................	Context
+Fill The Blank: Information is data which has been coded/........................	Structured
+Fill The Blank: Data must be .................. to become information	Processed
+Explain: The order, and links, between data, information and knowledge	Data -> Information -> Knowledge
+Explain: Order of DIKW pyramid	Data, Information, Knowledge, Wisdom. As steps are taken upwards through the levels (towards wisdom), questions can be asked about the data and answers provided with each step adding value to the data
+Fill The Blank: Linking a range of ........... can also represent information	Data
+Fill The Blank: As soon as information is processed, linked and stored by a digital system or a person it become .....................	Knowledge
+Fill The Blank: Businesses and organisations collect and store data and will use this data to provide information which can then be used to make strategic ...................	Decisions
+Fill The Blank: It is important data is stored in a way that allows the user to .......................	Manipulate
+Fill The Blank: The selected data ........ will depend on what data is to be stored and how it will be used and/or ........................	Type, Processed
+State: 6 main datatypes	Boolean. Character. Date. Integer. Real. String
+Explain: Boolean data type and give an example of data	Only 2 choices. 'Yes or no' OR 'True or false'
+Explain: Character data type and give an example of data	Stores single character which can be a letter, number or symbol. '$' OR 'A' - any character
+Explain: Date data type and give an example of data	Date with a defined structure (format will depend on how the date is used to be stored and processed. '12/02/2025'
+Explain: Integer data type and give an example of data	Whole numbers (positive or negative). '-99' OR '1'
+Explain: Real data type and give an example of data	Any number, with or without decimal places (positive or negative). '12.3' OR '-2492'
+Explain: String data type and give an example of data	Stores alphanumeric combinations and text; a group of characters stored together as one. '3T6HjV' OR 'Oxford Place'
+Fill The Blank: If stored data is the incorrect ........ type then any processing or analysis could be problematic causing incorrect ....................... being made by the data holder	Data, Decisions
+Fill The Blank: Data may be ................ between related organisations or within an industry such as that the ............................ shares data within the country or with other countries across the world	Shared, Government
+Explain: A file-based structure	Used to maintain and organise single or many data files - can help with basic data management
+Fill The Blank: A ........-based structure facilitates a range of application software packages to carry out functions for ......... users of the digital system	File, End
+Fill The Blank: In a file-based structure, each ................. defines and manages its own .......... This can put limits on how the data can be used or ........................... - important that the system allows ................... access by different processes.	Package, Data, Transmitted, Concurrent
+Fill The Blank: Data stored in a file-.......... system should be consistently .................. and stored so it is ..........................	Based, Structured, Accessible
+State: 2 issues with different areas within an organisation handling their own data	Different file formations being used, leading to incompatible data between areas. Data duplication. Lack of flexiblity in organising and querying the data. Increased number of different application programs (any 2)
+Explain: A directory-based structure	Way tht files and folders are displayed to the user - often in hierarchal tree structure. Can make it easier for end users to locate files as folder structure should be logical
+Define: Data wrangling	Process of changing unorganised and raw data into standardised data which makes it useful
+State: The 6 main steps in the data wrangling process	Discovery. Structure. Cleansing. Enrichment. Validation. Publishing
+Explain: Discovery	Initial step of understanding the data and fully understanding what the data is about and understanding the data will enable the best outcomes for its analysis
+Explain: Structure	Most data is unstructured and disorganised so it must be give na structure to make sure it is accessible and this structure will depend on the requirements of the output for analysis.
+Explain: Cleansing	Remove any anomalies from the data and make sure that it does not skew the final analysis if the requirements are not fully met. Cleansing will also remvoe any formatting anomalies from varied collection methods.
+Explain: Enrichment	If data that has been collected not fully meet the requirements, then one solution is data enrichment (or combining data sets). Enrichment of data involves adding or combining data sets so that the results of processing and analysis meet requirements fully. Data enrichment can be beneficial by saving a company by reducing the amount of primary data needing to be collected.
+Explain: Validation	Checking the reliability, quality and safety of the data is authenticated. This means checking the data to ensure it is complete and all data in a given field meets the same structure and level of completeness that is required.
+Explain: Publishing	The data output is full and complete and will enable analysis to be carried out. When publishing, the data must be made appopriately accessible.
+State: The 7 core functions of data systems	Input. Search. Save. Integrate. Organise (Index). Output. Feedback Loop
+Fill The Blank: The ............. function of a data sytem is the collection of ........ data	Input, Raw
+Fill The Blank: ..................... can be carried out on data to meet the specific needs and .......................... of the organisation and can be done multiple times with different .................... on saved data	Searching, Requirements, Criteria
+Fill The Blank: Inputted data can be ............. to allow processing, ............... and searching later on. This data can also be edited and resaved	Saved, Analysis
+Fill The Blank: Different data ............ and formats can be integrated into a single ..................... producing a full and complete output that meets specified needs and requirements. This is the core function .......................	Types, Location, Integrate
+Fill The Blank: Saved data can be given an ............ to ensure that it meets the needs of the end ......... and can increase the speed of ........................ data. .............. can be efficient and time-................. This is the core function .......................	Index, User, Searching, Indexes, Saving, Organisation
+Explain: Output core function of data systems	The processed and analysed data is sent to the relevant people or places
+Explain: Feedback loop core function	Feedbck is output that is returned to, usually senior management, to help evaluate the process to correct tasks carried out in the input stage etc.
+Fill The Blank: Data entry is done by combining data ............., but initially is usually done by a .................... who is capable of making .............. during data entry. There are features that can be used to reduce the number of data entry ..............	Stores, Person, Errors, Errors
+Explain: Transcription errors	Occur either when copying the data from the source document for data entry or by a user entering data online and the wrong key is entered or hitting two keys at once - entering incorrect data
+Explain: Transposition errors	When two eltters or numbers have been reversed
+Define: Validation	Checks that the data being entered into a digital system is sensible and reasonable, and checks it against pre-set rules
+Define: Verification	A check to see whether the data being entered into a digital system is identical to the surce document or initial data entry
+Fill The Blank: Validation is used to (attempt to) check that entered data entered is ................., reasonable, within predefined ..................... and is .........................	Sensible, Boundaries, Complete
+Fill The Blank: If an error in data entry is found on an online form, a useful ............... should be provided with details about the error and how it can be ...................	Message, Solved
+Explain: Briefly, GIGO	Garbage In, Garbage Out. If incorrect data is entered, the data stored will also be incorrect and when any processing is done, the correct results of the processing may be correct in terms of the data but will be incorrect in terms of accuracy and usefulness.
+Fill The Blank: After data has been entered, during its lifetime it will need to be .................. For example, by regular scheduled searches to remove redundant or expired data	Maintained
+State: 5 main ways data can be presented	Graphs/charts. Data tables. Reports. Infographics. Maps/Heat maps
+Explain: Data table	Extract or the result of a query from an information system, logically sorted and summarised - often used in reports alongside other visualisations. Data must be small and related for a data table to be suitable. Allows for precise data to be presented whereas a graph could not do this
+Explain: Graphs and charts	Makes it easier to understand data. Easy way to show complicated data. Common in reports at all levels of business. Easy to identify trends and patterns using a graph or chart
+Explain: Dashboard	Live interface from an information source that shows how data is now, often with historic data
+Explain: Infographics	For a less technical audience. Information can be lost for looks. Helps get complex ideas across to a mixed audience. Collection of images, charts/graphs and minimal text
+Explain: Maps	Data visualisation on a map which could show live data or historic data. Overlay information onto a map to show how data will alter based upon location
+Explain: Heat Maps	Use a colour scale over the data to show different levels
+State: 1 disadvantage of using a graph to represent data	If the graph poorly presents the data then the end user can misinterpret the data
+State: 3 of the common types of graphs	Area chart. Bar graph/histogram. Column chart. Dual axis chart. Line graph. Pie chart. Scatter plot. Stacked bar graph (any 3)
+Explain: Reports	A report will be a formal overview of the data showing the essential data that is needed to fulfil the specified requirements and needs of the end user. Data must be represented in an easy to read format so end users can easily visualise and understand the data report
+Explain: The aim of business information tools	Provide data for, and support the making of, informed decision making - gather, organise, process and analyse data to show trends and patterns
+Fill The Blank: Business ................. software (BIS) is to gather, ...................., process and ............. data to provide business intelligence and usually gathers data from a data .......................	Intelligence, Analyse, Report, Warehouse
+Fill The Blank: Business intelligence software can provide processed data which will enable ........... and ................. to be highlighted	Trends, Patterns
+Explain: Purpose of financial planning and analysis software	Support activities including planning and setting budgets, and budget forecasting and modelling
+State: 1 advantage of using financial planning and analysis software	Models can be created and shared between employees and different numbers can be locked so they cannot be changed, this would most probably be related to fixed costs
+State: 1 disadvantage of using financial planning and analysis software	While planning and analysing the financial aspect of a business if beneficial, it can be difficult to predict the impact of world events on business costs
+Fill The Blank: Using financial planning and analysis software means businesses can create and forecast the ............... aspects to make ................. decisions	Financial, Informed
+Explain: The purpose of Customer Relationship Management software (CRM)	Make cusotmer management less time consuming and easier for those employees who are customer facing
+Fill The Blank: A CRM software package helps track, .................... and ................ customer interactions	Manage, Record
+Fill The Blank: CRM software can be used by an organisation to ............ the gathered customer data from a range of ...............	Analyse, Sources
+State: 2 uses of CRM systems	Data mining. Identification of trends and patterns
+Fill The Blank: Results of analysis can be presented in a ............. way using .............. and charts to make tactical and ................... decisions	Visual, Graphs, Strategic
+Define: Data model	The logical interrelationships and data flow between different data elements involved in the information world that also documents the way data is stored and retrieved
+Fill The Blank: A data model will help when a database is being designed and will ensure final database is fit for ............... and mean it will be more ............... with all relational tables, .................. and foreign ........ are fully and complete defined meaning the database's requirements from the end user will be correctly and fully ....................... with no missing or ............................. data	Purpose, Efficiecnt, Primary, Keys, Represented, Redundant
+State: DBMS	Database Management System
+Explain: How a hierarchal database model works	Shows the database structure as a tree and tables are only related on a hierarchal basis
+Fill The Blank: Hierarchal database model will only generally be used for ........................ of files	Organisation
+State: 3 advantages of the hierarchal database model	East addition and deletion of data. Easy to share files based on folders (higher up hierarchy means they get all folders below). Supports one-to-many relationships. Relates to natural hierarchies for organisation (any 3)
+State: 3 disadvantages of the hierarchal database model	Hard to share specific sections of data and tracking sharing of data. Not scalable. Not flexible. Difficult to query. Slow to search. Prone to anomalies (any 3)
+Define: Conceptual data model	Defines what the system contains, establishing the entities and how they would relate to each other
+Define: Logical data model	Giving the different tables/entities their attributes/columns. Expands on the conceptual model. Give primary and foreign keys to each entity
+Define: Physical data model	Describes how the system will be implemented using a specific DBMS. Includes all datatypes and relationships, with no many-to-many relationships
+Define: Relationship model	Show a database as a collection of relationships. Shows the relationships between the tables, records and fields using primary and foreign keys
+Fill The Blank: An ............... ...................... diagram can be used during creation of the ...................., logical and ..................... data models	Entity, Relationship, Conceptual, Physical
+Explain: The three main parts of an entity relationship diagram (ERD)	Entities - what will become the tables in a DB. Columns - are also called attributes which will become fields in a DB. Relationships - how the entities are linked
+Fill The Blank: A completed ERD will not include any many-to-............. relationships but instead using a link ...........	Many, Entity
+Define: Primary Key	A field in a table that allows eaach record to be uniquely identified
+Define: Foreign key	Used to link tables together, a field in one table that is linked to a primary key in a different table
+Define: Data dictionary	Contain data about the data that will be included in the database (contains metadata)
+Fill The Blank: Usually created as part of ............. data modelling and will include each ........... (table)	Physical, Entity
+State: The 6 Vs	Volume. Variety. Velocity. Variability. Value. Veracity
+Explain: Volume	Considering the amount of data and if there is a capability to store this volume
+Explain: Variety	Consider where the data has come from and in what form; is it structured or unstructured?
+Explain: Velocity	Speed at which the data is being generated and gathered quickly
+Explain: Variability	Ensuring that changes in data (likely from different sources) is expected and not unreasonable. It can ruin comparison between old and new data if it has changed considerably
+Explain: Value	How useful is the data once processed and analysed; did it meet the predefined goal of analysis?
+Explain: Veracity	How accurate and if the data is verifiable leading to a corresponding level of confidence in it's reliability
+Explain: The meaning of reliable data	How complete and accurate data is
+State: What data must be for it be gathered, processed and analysed	Highly reliable. Of good quality
+State: 2 things that can be done to increase the quality of data	Verification. Validation
+State: Data Redundancy	When the same piece of data is stored two or more times on a digital system
+Fill The Blank: Data redundancy can be linked to data ..................... where a piece of data is stored twice on a system in two different ...............	Inconsistency, Formats
+Explain: What could happen if redundant data is processed and analysed	Creation of unreliable and meaningless information that leads to uninformed and incorrect decisions from the data
+Explain: One time data redudancy can be useful to an organisation	Keeping a backup copy of the data
+State: One example of data redundancy   Hint: Locations	Where data is stord in two locations and is updated in one location but not the other - this could mean each piece of data could be treated as unique
+State: How to reduce the risk of data redundancy	Comprehensive data modelling
+State: 2 ways data can be gathered	Surveys. Questionnaires
+Fill The Blank: Qualitative and Quantitative data may be gathered as customer ...................	Feedback
+Define: Research Population	Number of people required to complete the research
+Fill The Blank: The size of the research population will depend on defined ...................... needed from the results of the research	Requirements
+Explain: How a research population being skewed can affect gathered data	Results of the research may not provide reliable or high quality data
+State: 4 of the 8 areas to consider with ethics and data and it's manipulation	Personal data. Equality and discrimination. Sharing and reuse of data. Copyright and intellectual property. Freedom of information. Statistics. Information governance. Sector specific legislation (any 4)
+Fill The Blank: Data should be ....................., entered and maintained ......................, with accountability and ....................	Gathered, Transparently, Fairness
+Fill The Blank: Data should be gathered, entered and maintained with no .......... or pre-................. perceptions	Bias, Conceived
+State: What 2 acts should be considered with data and the legal and ethical issues of it	DPA. Equality act
+State: 3 main factors affecting how an organisation collects and analyses data	Time. Skills. Cost
+Explain: Briefly, 2 ways data collection and analysis can cost a business money	Employment costs from the time taken. Entering data onto a system. Completing maintenance tasks. Contracting third parties to do tasks (any 2)
+Explain: Briefly, 2 ways data can cost an organisation time	Gathering of data. Input/data entry of data. Maintenance - staff costs (any 2)
+Fill The Blank: Data gathering can require improvements in skills by .................... skills or updating ..................... relating to legislative requirements	Updating, Knowledge
+Define: Data Warehouse	Central location of key data, integrated into a pre-defined format and can be used across the business to make business-critical and evidence-based decisions
+Fill The Blank: Data warehouses will have data from a ................ of internal and external ..................	Range, Sources
+Fill The Blank: Data warehouses will contain a range of ............. and will therefore need data ............. to convert the data into a standardised and pre-defined format	Formats, Cleaning
+Fill The Blank: Data in a data warehouses does not ............... and cannot be ................	Change, Edited
+Define: Data Cleaning	Process of going through data looking for errors and correcting them, or excluding data where errors have been located
+Explain: What data warehouses are used for by staff members	Used by specific business users to analyse and extract a particular meaning from the data
+Fill The Blank: Data stored in a warehouse must be ............, ................... and easy to ............... and easy to manage to enable data ............... to be carried out.	Secure, Reliable, Retrieve, Analysis
+Define: Data Lake	Data stores that hold data in an unstructured way with no defined format to the way the data is structured
+Fill The Blank: The data is stored in a ........ state as it may not be processed	Raw
+Fill The Blank: Data in a lake is only converted into a predefined .............. when it is ready to be analysed	Format
+State: 3 advantages using data warehouses	Faster data retrieval. Easy integration. Great performance. Flexibility (any 3)
+State: 3 disadvantages of data warehouses	Time taking process. Limited use of data. High cost of data (any 3)
+State: 3 advantages of data lakes	Variety and volume. Fast processing. Scalability (any 3)
+State: 3 disadvantages of data lakes	Cloud preferences. Lack of optimisation. Skill gap and best practices (any 3)
+Define: Data Mining	Data mining is used by organisations to process and analyse raw data often used by companies to find unusual patterns that are not normally spotted. It is often done by a specialist third party.
+Define: Data Reporting	Takes data and converts it into information and can show an organisation what is happening right now and be analysed for understanding why things are happening. Data can be converted into graphs and charts
+Define: Metadata	Data about data
+Describe: Administrative Data	Provides administrative instructions about a file.
+Fill The Blank: Administrative metadata could include ................... rights or a specific ......... ...........	Access, File Type
+Define: Descriptive Metadata	Relates to how data is identified
+Fill The Blank: Descriptive metadata could include ........, dates or ..................	Titles, Keywords
+State: Metadata's name when on websites	Metatags
+Define: Structural Metadata	How a digital asset is arranged or structured
+Fill The Blank: Examples of structural data include ........., webpages and word-.............. documents and a database with a data ..................	Emails, Processed, Dictionary
+Fill The Blank: .................... can be set to ......... what a user can do with data.	Priveleges (Need to say this NOT permissions), User
+Explain: Rules	Can be set and part of the permissions and priveleges to attempt to increase the data security.
+State: 1 example of rules that can be set	Access to all files. Access to specific files and folders (any 1)
+Fill The Blank: Rules assigned to a user are likely based on ........ ...........	Job Role
+Explain: What can happen if data is not kept secure and access rules are not set	Data could be leaked or edited
+State: 2 impacts of loss or unauthorised editing of data	Data bias. Inaccurate data leading to incorrect processing and analysis and uninformed decisions being made. A data breach/leak leading to a possible legal and /or financial impact (any 2)
+Explain: What an API allows a user to do	Manage, access and use data across a range of platforms
+Explain: 1 advantage of APIs for logins	Accessing a website through an API means that users do not have to create a seperate account per website and can use their log-in credentials for the API instead
+Fill The Blank: An API sends a user's action (...............) to a digital system and the system sends a ............... back to the user	Request, Response
+Fill The Blank: An API uses ............ to send and receive requests	JSON
+Fill The Blank: An API needs appropriate certificates for the data that is being accessed with a ............ or ............... certificate being preferred over Public for privacy	Partner, Private
+State: 2 of the most common uses for APIs	Financial Services. CRM Systems. Online Retailers (any 2)
+State: 3 ways to categorise data	Data at rest. Data in use. Data in motion
+Explain: Data at rest	Data that is stored and not moving - includes archived data
+Explain: Data in use	Data that is being actively used and/or processed by a user or digital system, also data being used by a device to function
+Explain: Data in motion	Also known as data in transit, when data is moving from one location to another and includes data via the internet or through an internal network
+Fill The Blank: Data in motion is considered to be ........ secure and more susceptible to security ..............	Less, Attacks
